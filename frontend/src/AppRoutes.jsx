@@ -5,13 +5,22 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 // Pages
 import Home from './pages/public/Home/Home'
 import Private from './pages/private/Private'
+import Teste from './pages/public/Teste/Teste'
+
+// Contexts
+import { AdminProvider } from './contexts/admin'
 
 const AppRoutes = () => {
   return (
     <Router>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-      </Routes>
+      <AdminProvider>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+
+          {/* Rotas apenas para admin logado */}
+          <Route exact path='/teste' element={<Teste />} />
+        </Routes>
+      </AdminProvider>
     </Router>
   )
 }
