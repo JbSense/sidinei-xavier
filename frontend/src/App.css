@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;600&display=swap');
+
+:root {
+  --side-padding: 4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Jost', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #F9F9F9;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 960px) {
+  :root {
+    --side-padding: 3rem;
+  }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px) {
+  :root {
+    --side-padding: 2rem;
+  }
+
+  * {
+    font-size: 50%;
+  }
 }

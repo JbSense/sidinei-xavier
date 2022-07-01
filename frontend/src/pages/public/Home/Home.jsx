@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import { AdminContext } from '../../../contexts/admin'
+import React from 'react'
+
+// Components
+import Header from '../../../components/Header/Header'
 
 const Home = () => {
-  const { admin } = useContext(AdminContext)
-
   return (
     <div className='Home'>
+      <Header />
       <h1>Home</h1>
-      <h2>{admin.name}</h2>
     </div>
   )
 }
