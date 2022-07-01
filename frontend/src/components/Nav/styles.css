@@ -29,21 +29,36 @@
 
 .Nav__menu-toggle {
   width: 30px;
-}
-
-.Nav__menu-toggle span {
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
+  height: 10px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-.Nav__menu-toggle span::after {
-  content: '';
+.Nav__menu-toggle:hover > .menu-toggle__top-line,
+.Nav__menu-toggle:hover > .menu-toggle__top-line {
+  transform: translateY(0);
+}
+
+.menu-toggle__top-line,
+.menu-toggle__bottom-line {
   width: 100%;
   height: 3px;
   background-color: #fff;
+  position: absolute;
+}
+
+.menu-toggle__top-line:hover,
+.menu-toggle__bottom-line:hover {
+  transform: translateY(0);
+}
+
+.menu-toggle__top-line {
+  transform: translateY(-4px);
+}
+
+.menu-toggle__bottom-line {
+  transform: translateY(4px);
 }
 
 /* SMALL SCREENS */
