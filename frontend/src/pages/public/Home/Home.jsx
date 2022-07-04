@@ -4,9 +4,11 @@ import React from 'react'
 import Header from '../../../components/Header/Header'
 
 const Home = () => {
+  // document.querySelector('.Header').classList.add('background-transparent')
+
   return (
     <div className='Home'>
-      <Header />
+      <Header page='home'/>
       <h1>Home</h1>
     </div>
   )
