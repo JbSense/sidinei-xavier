@@ -17,16 +17,10 @@ const Header = (props) => {
     }
   }
 
-  const backgroundTransparent = () => {
-    if (props.page !== undefined && props.page === 'home') {
-      return 'transparent'
-    } else {
-      return 'black'
-    }
-  }
+  const background = props.background !== undefined ? props.background : ''
 
   return (
-    <div className={'header ' + backgroundTransparent}>
+    <div className={'Header ' + background}>
       <h1 className='Header__name'>Sidinei Xavier</h1>
       <div className='Header__menu-toggle' onClick={openMenuNav}>
         <span className='menu-toggle__top-line'></span>

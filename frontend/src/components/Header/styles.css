@@ -7,10 +7,16 @@
   background-color: rgba(0, 0, 0, 0.918);
   transition: .3s ease;
 
+  position: fixed;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem;
   align-items: center;
+}
+
+.Header.transparent {
+  background-color: transparent;
 }
 
 .Header.nav-open {
