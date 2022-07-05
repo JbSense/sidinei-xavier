@@ -1,0 +1,46 @@
+.Home__banner {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.Home__banner img {
+  width: 100%;
+}
+
+.banner_text {
+  position: absolute;
+  left: var(--side-padding);
+  bottom: var(--side-padding);
+  color: #fff;
+}
+
+.banner_text h1 {
+  font-size: 4rem;
+}
+
+.banner_text p {
+  font-size: 2.4rem;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 960px) {
+  .banner_text h1 {
+    font-size: 3rem;
+  }
+
+  .banner_text p {
+    font-size: 2rem;
+  }
+
+}
+/* SMALL SCREENS */
+@media screen and (max-width: 960px) {
+  .banner_text h1 {
+    font-size: 2.4rem;
+  }
+
+  .banner_text p {
+    font-size: 1.6rem;
+  }
+}

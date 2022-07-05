@@ -17,7 +17,7 @@ const Header = (props) => {
     }
   }
 
-  const background = props.background !== undefined ? props.background : ''
+  const background = props.background !== undefined ? props.background : 'dark'
 
   return (
     <div className={'Header ' + background}>
