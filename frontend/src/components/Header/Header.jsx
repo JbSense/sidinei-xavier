@@ -4,7 +4,7 @@ import './styles.css'
 // Components
 import Nav from '../Nav/Nav'
 
-const Header = (props) => {
+function Header (props) {
   let menuNav = 'closed'
 
   const openMenuNav = () => {

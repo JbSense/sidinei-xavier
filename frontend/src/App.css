@@ -2,6 +2,7 @@
 
 :root {
   --side-padding: 4rem;
+  --section-margin: 4rem;
 }
 
 * {
@@ -16,6 +17,10 @@
 
 body {
   background-color: #F9F9F9;
+}
+
+a {
+  color: #000;
 }
 
 /* MEDIUM SCREENS */

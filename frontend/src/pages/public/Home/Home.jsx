@@ -3,15 +3,38 @@ import './styles.css'
 
 // Components
 import Header from '../../../components/Header/Header'
+import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 
-const Home = () => {
+function Home () {
   window.addEventListener('scroll', () => {
+    const headerTag = document.querySelector('.Header')
     if (window.scrollY > 10) {
-      document.querySelector('.Header').classList.remove('dark')
+      headerTag.classList.remove('transparent')
+      headerTag.classList.add('dark')
     } else {
-      document.querySelector('.Header').classList.add('dark')
+      headerTag.classList.remove('dark')
+      headerTag.classList.add('transparent')
     }
   })
+
+  const examples = [
+    {
+      title: 'Nome do Projeto',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    },
+    {
+      title: 'Nome do Projeto',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    },
+    {
+      title: 'Nome do Projeto',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    },
+    {
+      title: 'Nome do Projeto',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    }
+  ]
 
   return (
     <div className='Home'>
@@ -36,6 +59,16 @@ const Home = () => {
         </div>
 
         <img className='bibliography__perfil_image' src='assets/images/perfil.jpg' alt='Foto de perfil Sidinei Xavier' />
+      </div>
+
+      <div className='Home__projects'>
+        <h1 className='projects__title'>Projetos Aprovados</h1>
+
+        <div className='projects__section-cards'>
+          <div className="projects__section-cards-align">
+            <ProjectCard projects={examples}/>
+          </div>
+        </div>
       </div>
     </div>
   )

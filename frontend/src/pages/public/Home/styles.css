@@ -1,3 +1,10 @@
+.Home {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Home__banner {
   width: 100%;
   position: relative;
@@ -23,6 +30,48 @@
   font-size: 2.4rem;
 }
 
+.Home__bibliography {
+  width: 80%;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 2rem;
+  margin-top: var(--section-margin);
+}
+
+.bibliography__perfil_image {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.bibliography__text {
+  max-width: 80rem;
+}
+
+.bibliography__text h1 {
+  font-size: 3rem;
+}
+
+.bibliography__text p {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.Home__projects {
+  width: 80%;
+  margin-top: var(--section-margin);
+}
+
+.projects__title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.projects__section-cards {
+  display: flex;
+}
+
 /* MEDIUM SCREENS */
 @media screen and (max-width: 960px) {
   .banner_text h1 {
@@ -33,14 +82,29 @@
     font-size: 2rem;
   }
 
+  .Home__bibliography {
+    width: 100%;
+    padding: 0rem var(--side-padding);
+  }
+
 }
 /* SMALL SCREENS */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 650px) {
   .banner_text h1 {
     font-size: 2.4rem;
   }
 
   .banner_text p {
     font-size: 1.6rem;
+  }
+
+  .Home__bibliography {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .bibliography__perfil_image {
+    width: 30rem;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const Nav = () => {
+function Nav () {
   return (
     <div className='Nav'>
       <ul className='Nav__links'>
