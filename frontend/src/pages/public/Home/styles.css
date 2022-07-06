@@ -1,5 +1,5 @@
 .Home {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,8 +58,10 @@
 }
 
 .Home__projects {
-  width: 80%;
   margin-top: var(--section-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects__title {
@@ -69,7 +71,19 @@
 }
 
 .projects__section-cards {
+  min-width: 80%;
+  max-width: 90vw;
+  /* padding: 0rem var(--side-padding); */
+  overflow-x: auto;
   display: flex;
+  justify-content: start;
+}
+
+.projects__section-cards-align {
+  margin: 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2rem;
 }
 
 /* MEDIUM SCREENS */
