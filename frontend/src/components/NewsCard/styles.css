@@ -1,0 +1,29 @@
+.News-card {
+  width: 20rem;
+  position: relative;
+}
+
+.News-card__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.News-card__align-text {
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(.8px);
+  /* backdrop-filter: brightness(95%); */
+}
+
+.News-card__title {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.News-card__summary {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #fff;
+}

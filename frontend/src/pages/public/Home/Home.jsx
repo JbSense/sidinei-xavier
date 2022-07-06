@@ -5,6 +5,7 @@ import './styles.css'
 // Components
 import Header from '../../../components/Header/Header'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
+import NewsCard from '../../../components/NewsCard/NewsCard'
 
 function Home () {
   window.addEventListener('scroll', () => {
@@ -53,6 +54,19 @@ function Home () {
     }
   ]
 
+  const news = [
+    {
+      title: 'Titulo notícia',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      imagePath: 'assets/images/ft.jpg'
+    },
+    {
+      title: 'Titulo notícia',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      imagePath: 'assets/images/ft.jpg'
+    }
+  ]
+
   return (
     <div className='Home'>
       <Header background='transparent'/>
@@ -93,6 +107,10 @@ function Home () {
       <div className="Home__news">
         <h1 className='news__call-title'>Venha conferir as noticias abaixo sobre a nossa cidade</h1>
         <h1 className='news__title'>Notícias</h1>
+
+        <div className="news__align">
+          <NewsCard news={news} />
+        </div>
       </div>
     </div>
   )
