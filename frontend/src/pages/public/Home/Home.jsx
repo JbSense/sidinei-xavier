@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './styles.css'
 
 // Components
@@ -85,6 +86,13 @@ function Home () {
             <ProjectCard projects={examples}/>
           </div>
         </div>
+
+        <Link to='#' className='projects__button'>Ver todos os projetos</Link>
+      </div>
+
+      <div className="Home__news">
+        <h1 className='news__call-title'>Venha conferir as noticias abaixo sobre a nossa cidade</h1>
+        <h1 className='news__title'>Notícias</h1>
       </div>
     </div>
   )
