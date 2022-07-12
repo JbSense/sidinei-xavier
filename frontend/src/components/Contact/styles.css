@@ -1,0 +1,30 @@
+.Contact {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.left-side__title {
+  font-size: 2.6rem;
+}
+
+.left-side__text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.left-side__social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.left-side__social-media a {
+  margin: 0 1rem;
+}
+
+.left-side__social-media img {
+  width: 4rem;
+}

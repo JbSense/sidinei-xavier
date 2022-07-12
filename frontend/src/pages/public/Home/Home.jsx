@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './styles.css'
 
 // Components
+import Contact from '../../../components/Contact/Contact'
 import Header from '../../../components/Header/Header'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 import NewsCard from '../../../components/NewsCard/NewsCard'
@@ -20,14 +21,14 @@ function Home () {
   })
 
   const examples = [
-    {
-      title: 'Nome do Projeto',
-      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-    },
-    {
-      title: 'Nome do Projeto',
-      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-    },
+    // {
+    //   title: 'Nome do Projeto',
+    //   summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    // },
+    // {
+    //   title: 'Nome do Projeto',
+    //   summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+    // },
     {
       title: 'Nome do Projeto',
       summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
@@ -55,6 +56,16 @@ function Home () {
   ]
 
   const news = [
+    {
+      title: 'Titulo notícia',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      imagePath: 'assets/images/ft.jpg'
+    },
+    {
+      title: 'Titulo notícia',
+      summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      imagePath: 'assets/images/ft.jpg'
+    },
     {
       title: 'Titulo notícia',
       summary: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
@@ -108,10 +119,14 @@ function Home () {
         <h1 className='news__call-title'>Venha conferir as noticias abaixo sobre a nossa cidade</h1>
         <h1 className='news__title'>Notícias</h1>
 
-        <div className="news__align">
-          <NewsCard news={news} />
+        <div className="news__align-content">
+          <div className="news__align">
+            <NewsCard news={news} />
+          </div>
         </div>
       </div>
+
+      <Contact />
     </div>
   )
 }
