@@ -39,7 +39,9 @@ function Contact () {
           type='number'
           label='Número'
         />
-        <textarea name='message' cols='30' rows='5' className='right-side__message' placeholder='Mensagem'></textarea>
+        <textarea name='message' cols='30' rows='4' className='right-side__message' placeholder='Mensagem'></textarea>
+
+        <button className='right-sode__send-message'>Enviar</button>
       </form>
     </div>
   )

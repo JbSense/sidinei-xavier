@@ -1,11 +1,12 @@
 .Contact {
+  max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
 }
 
 .Contact__left-side { 
-  max-width: 650px;
+  max-width: 500px;
 }
 
 .left-side__title {
@@ -33,6 +34,12 @@
 }
 
 .Contact__right-side {
+  width: 60%;
+  max-width: 400px;
+  min-width: 100%;
+  padding: 2rem;
+  background-color: #000;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -43,6 +50,24 @@
 
 .right-side__message {
   padding: 0 .5rem;
+  background: transparent;
+  border: 2px solid #fff;
   font-size: 1.6rem;
-  border: 2px solid #000;
+  color: #fff;
+}
+
+.right-sode__send-message {
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 650px) {
+  .Contact {
+    grid-template-columns: 1fr;
+  }
 }

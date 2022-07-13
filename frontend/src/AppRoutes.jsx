@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 // Pages
 import Home from './pages/public/Home/Home'
@@ -21,6 +22,7 @@ const AppRoutes = () => {
           <Route exact path='/teste' element={<Teste />} />
         </Routes>
       </AdminProvider>
+      <Footer />
     </Router>
   )
 }
