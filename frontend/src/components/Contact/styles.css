@@ -1,8 +1,11 @@
 .Contact {
-  width: 80%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 3rem;
+}
+
+.Contact__left-side { 
+  max-width: 650px;
 }
 
 .left-side__title {
@@ -27,4 +30,19 @@
 
 .left-side__social-media img {
   width: 4rem;
+}
+
+.Contact__right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input { 
+  margin: 14px 0;
+}
+
+.right-side__message {
+  padding: 0 .5rem;
+  font-size: 1.6rem;
+  border: 2px solid #000;
 }

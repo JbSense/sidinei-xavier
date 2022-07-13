@@ -23,15 +23,24 @@ function Contact () {
         </div>
       </div>
 
-      <div className='Contact__right-side'>
-        <form action=''>
-          <Input
-            name='email'
-            type='email'
-            label='E-mail'
-          />
-        </form>
-      </div>
+      <form action='' className='Contact__right-side'>
+        <Input
+          name='name'
+          type='text'
+          label='Nome'
+        />
+        <Input
+          name='email'
+          type='email'
+          label='E-mail'
+        />
+        <Input
+          name='phone'
+          type='number'
+          label='Número'
+        />
+        <textarea name='message' cols='30' rows='5' className='right-side__message' placeholder='Mensagem'></textarea>
+      </form>
     </div>
   )
 }

@@ -1,43 +1,43 @@
 .Input {
   width: 300px;
-  background-color: #e4e4e4;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: center; */
   position: relative;
 }
 
 .Input::after {
   content: '';
+  width: 100%;
   height: 2px;
   background-color: #000;
 }
 
-.Input:hover .Input::after {
-  width: 100%;
+.Input__label {
+  padding: 0rem;
+  font-size: 1.6rem;
+  color: #8d8d8d;
+  position: absolute;
+  pointer-events: none;
+  transition: .3s ease;
 }
 
-.Input__label {
-  margin-left: 2px;
-  font-size: 1.6rem;
-  color: #00000091;
-  position: absolute;
-  transition: .3s ease;
+.Input__input:hover ~ .Input__label,
+.Input__input:focus ~ .Input__label,
+.Input__input:valid ~ .Input__label {
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #000;
+  transform: translateY(-100%);
 }
 
 .Input__input {
   width: 100%;
-  padding: 0 2px;
-  outline: none;
   background: transparent;
+  outline: none;
   border: none;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-}
-
-.Input:hover > .Input__label {
-  font-size: 1.4rem;
-  color: #000;
-  transform: translateY(-100%);
 }
